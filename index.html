@@ -4,47 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <style>
-        body{
-            background-color: #ccc;
-        }
-        .carousel-item img{
-            width: 100%;
-            max-height: 90vh;
-            object-fit: fill;
-        }
-    </style>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <div class="carousel-container container ">
+    <header id="page-header">
+        <h1 class="h1">Portal do Schnauzer</h1>
+        <img src="./images/header.webp">
+    </header>
+    <div id="img-carousel" class="carousel carousel-dark mb-4 slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-        <div id="img-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-
-                <div class="carousel-item  active" data-bs-interval="5000">
-                    <img class="d-block w-100 " src="./images/schnauzer-6648105_1280.jpg">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img class="d-block w-100 " src="./images/dog-1785748_1280.jpg">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img class="d-block w-100 " src="./images/miniature-schnauzer-1923470_1280.jpg">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img class="d-block w-100 " src="./images/schnauzer-1238155_1280.jpg" alt="">
-                </div>
-
-                <button data-bs-target="#img-carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button data-bs-target="#img-carousel" data-bs-slide="next" class="carousel-control-next" type="button">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+            <div class="carousel-item  active" data-bs-interval="5000">
+                <img class="d-block w-100 " src="./images/schnauzer-6648105_1280.jpg">
             </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100 " src="./images/dog-1785748_1280.jpg">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100 " src="./images/miniature-schnauzer-1923470_1280.jpg">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="5000">
+                <img class="d-block w-100 " src="./images/schnauzer-1238155_1280.jpg" alt="">
+            </div>
+
+            <button data-bs-target="#img-carousel" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon carousel-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button data-bs-target="#img-carousel" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon carousel-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#img-carousel" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#img-carousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#img-carousel"  data-bs-slide-to="3"></button>
         </div>
 
     </div>
@@ -52,49 +54,73 @@
     <div class="container">
 
         <div class="row">
-            <div class="col">
-                <article class="card">
-                    <header class="card-header">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card border-dark text-bg-light">
+                    <header class="card-header border-dark">
                         Personalidade
                     </header>
                     <div class="card-body">
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sed architecto assumenda dolorum adipisci incidunt et sit ipsam natus temporibus suscipit perspiciatis aut sint quia, tempore libero minus in dolor.
+                            O schnauzer é cheio de vida e sempre se mostra pronto para uma aventura ou brincadeira com sua família. Bem enérgicos, eles podem ficar tranquilamente por horas correndo atrás de uma bolinha, sem demonstrar cansaço. Apegados aos seus tutores, eles costumam ser um pouco mais arredios com estranhos, especialmente dentro de suas casas, onde podem se mostrar bem protetores e até territorialistas. O schnauzer miniatura costuma latir bastante e é preciso direcionar seu pet corretamente desde filhote para que isso não se torne um problema.
                         </p>
                     </div>
                 </article>
             </div>
         
-    
-            <div class="col">
-                <article class="card">
-                    <header class="card-header">
-                        Saúde
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card border-dark text-bg-light">
+                    <header class="card-header border-dark">
+                        Inteligência
                     </header>
                     <div class="card-body">
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laboriosam, mollitia illum, sequi eaque consequatur corrupti possimus aliquam repellendus saepe nam sapiente blanditiis. Minima quibusdam labore nam quas exercitationem quisquam.
+                            Os schnauzers são muito inteligentes, mas costumam obedecer apenas aqueles com quem possuem um vínculo afetivo. Ser duro com um cachorro desta raça nunca é uma boa ideia, pois eles podem se mostrar ressentidos e não quererem mais realizar a tarefa que lhe foi solicitada. Schnauzers precisam ser socializados desde cedo e é ideal que eles se acostumem com outros cães, pessoas de diferentes idades e estilos, além de animais de outras espécies - já que podem criar o hábito de perseguí-los como faziam com os ratos e outros roedores pequenos no passado.
                         </p>
                     </div>
                 </article>
             </div>
-        
-            <div class="col">
-                <article class="card">
-                    <header class="card-header">
-                        Curiosidades
+            
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card border-dark text-bg-light">
+                    <header class="card-header border-dark">
+                        Pelagem
                     </header>
                     <div class="card-body">
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iste! Placeat qui aliquid aperiam illo rem, laudantium ducimus suscipit fugiat molestiae. Sequi blanditiis ipsa velit modi exercitationem dolor architecto reprehenderit?
+                            O pelo do schnauzer é bem diferente ao toque, quase que do "tipo arame" (nome dado aos pelos mais ásperos) quando tosados. Sua tosa é específica da raça, mantendo uma “saia” longa, barba e sobrancelhas que são devidamente aparadas com uma tesoura. No corpo, é de costume usar uma máquina com lâmina baixa para que seu porte seja notado e seus músculos (especialmente os das pernas) fiquem evidentes. Ela também facilitava em sua principal função, uma vez que dificultava a chegada dos roedores ao corpo do pet quando tentavam mordê-lo.
                         </p>
                     </div>
                 </article>
             </div>
 
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card border-dark text-bg-light">
+                    <header class="card-header border-dark">
+                        Saúde
+                    </header>
+                    <div class="card-body">
+                        <p class="card-text">
+                            Problemas renais e do trato urinário, em geral, são comuns aos schnauzers. É preciso ficar atento aos sinais de doenças deste tipo como dificuldade para urinar, urina com sangue, sede ou pouca ingestão de água, entre outros. O hipotireoidismo pode ser uma das maiores causas de sobrepeso e obesidade em schnauzers. Realize checkups anuais com seu médico veterinário de confiança e entre em contato com ele caso note que houve um ganho de peso repentino do pet. 
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <article class="card border-dark text-bg-light">
+                    <header class="card-header border-dark">
+                        Cuidados
+                    </header>
+                    <div class="card-body">
+                        <p class="card-text">
+                            O schnauzer precisa gastar sua energia diariamente. Se você é do tipo sedentário e que não gosta de uma aventura, repense a raça. Uma hora de passeio pode não ser o suficiente para este pequeno animado. Atividades físicas e mentais prometem deixar o pet calmo e super satisfeito. Aposte numa mescla entre elas! Sua pelagem precisa de tosas a cada quatro meses, em média, e precisa ser escovada com frequência para que não forme nós.
+                        </p>
+                    </div>
+                </article>
+            </div>
         </div>
     </div>
     
-    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
