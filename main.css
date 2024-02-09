@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 18px;
+    padding: 18px 10px 0 10px;
     font-size: 28px;
 }
 #page-header img{
